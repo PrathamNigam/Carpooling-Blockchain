@@ -1,0 +1,22 @@
+{
+  "name": "carpooling-dapp",
+  "version": "1.0.0",
+  "description": "Carpooling DApp with blockchain integration",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "cd server && node server.js",
+    "blockchain": "cd blockchain && truffle migrate --reset",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "blockchain",
+    "carpooling",
+    "dapp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
